@@ -1,0 +1,102 @@
+body {
+  background-color: #dddddd;
+}
+
+#title {
+  color: #113c4a;
+  text-align: center;
+  font-family: Merriweather, serif;
+  font-size: 30px;
+}
+
+#tribute-info {
+  margin: 15px 20px;
+  color: #265a5c;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #113c4a;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+  color: #113c4a;
+}
+
+#img-caption {
+  margin: 15px 20px;
+  color: #113c4a;
+  font-size: 24px;
+  font-family: Merriweather, serif;
+}
+
+.divider {
+  border-top: 3px solid #3f7b70;
+}
+
+.wiki-info {
+  color: #3f7b70;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* image grid css*/
+#img-div {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+#image {
+  width: 100%;
+  margin: 4px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 900px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* text css */
+
+@media screen and (max-width: 900px) {
+  #tribute-info {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #tribute-info {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
